@@ -14,13 +14,13 @@ set yrange [0:]
 set key at 15,40
 
 plot	"dat/hpio_pktsize-60_bulknum-1_vs_cpunum.dat"	\
-	using ($0):2:xtic(1) with lp title "hpio(1)",	\
+	using ($0):2:xtic(1) with lp title "hpio(1b)",	\
 	"dat/hpio_pktsize-60_bulknum-4_vs_cpunum.dat"	\
-	using ($0):2:xtic(1) with lp title "hpio(4)",	\
+	using ($0):2:xtic(1) with lp title "hpio(4b)",	\
 	"dat/hpio_pktsize-60_bulknum-32_vs_cpunum.dat"	\
-	using ($0):2:xtic(1) with lp title "hpio(32)",	\
+	using ($0):2:xtic(1) with lp title "hpio(32b)",	\
 	"dat/hpio_pktsize-60_bulknum-128_vs_cpunum.dat"	\
-	using ($0):2:xtic(1) with lp title "hpio(128)",	\
+	using ($0):2:xtic(1) with lp title "hpio(128b)",	\
 	"dat/raw_pktsize-60_bulknum-1_vs_cpunum.dat"	\
 	using ($0):2:xtic(1) with lp title "raw socket",	\
 	"dat/udp_pktsize-60_bulknum-1_vs_cpunum.dat"	\

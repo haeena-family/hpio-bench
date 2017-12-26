@@ -14,11 +14,11 @@ set yrange [0:]
 set key top left
 
 plot	"dat/hpio_pktsize-60_cpunum-1_vs_bulk.dat"	\
-	using ($0):2:xtic(1) with lp title "hpio(1)",		\
+	using ($0):2:xtic(1) with lp title "hpio(1c)",		\
 	"dat/hpio_pktsize-60_cpunum-4_vs_bulk.dat"	\
-	using ($0):2 with lp title "hpio(4)",		\
+	using ($0):2 with lp title "hpio(4c)",		\
 	"dat/hpio_pktsize-60_cpunum-8_vs_bulk.dat"	\
-	using ($0):2 with lp title "hpio(8)",		\
+	using ($0):2 with lp title "hpio(8c)",		\
 	"dat/hpio_pktsize-60_cpunum-16_vs_bulk.dat"	\
-	using ($0):2 with lp title "hpio(16)"		\
+	using ($0):2 with lp title "hpio(16c)"		\
 
