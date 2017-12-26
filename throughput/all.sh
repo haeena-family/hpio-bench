@@ -65,3 +65,46 @@ done
 
 
 
+echo Generate tx throughput VS pktsize
+
+
+for cpunum in 1 4 8 16; do
+
+	# hpio
+	for bulknum in 1 4 32; do
+	dat=dat/hpio_bulknum-${bulknum}_cpunum-${cpunum}_vs_pktsize.dat
+	rm -f $dat
+	touch $dat
+	
+	for pktsize in 60 128 256 512 1024 1500; do
+	pref=output-hpio/result_tx_cnx5_hpio
+	txt=${pref}_pktsize-${pktsize}_bulknum-${bulknum}_cpunum-${cpunum}.txt
+	echo $txt
+	./parser.py $pktsize $txt >> $dat
+	done
+	done
+
+
+	# raw
+	dat=dat/raw_bulknum-1_cpunum-${cpunum}_vs_pktsize.dat
+	rm -f $dat
+	touch $dat
+	for pktsize in 60 128 256 512 1024 1500; do
+		pref=output-raw/result_tx_cnx5_raw
+		txt=${pref}_pktsize-${pktsize}_bulknum-1_cpunum-${cpunum}.txt
+		echo $txt
+		./parser.py $pktsize $txt >> $dat
+	done
+
+	# udp
+	dat=dat/udp_bulknum-1_cpunum-${cpunum}_vs_pktsize.dat
+	rm -f $dat
+	touch $dat
+	for pktsize in 60 128 256 512 1024 1500; do
+		pref=output-udp/result_tx_cnx5_udp
+		txt=${pref}_pktsize-${pktsize}_bulknum-1_cpunum-${cpunum}.txt
+		echo $txt
+		./parser.py $pktsize $txt >> $dat
+	done
+
+done
