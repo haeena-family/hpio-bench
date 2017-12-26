@@ -1,0 +1,52 @@
+[1m[31mmain:WARN: When RX mode with udp, and per_cpu_rx if off, only 1 cpu is used
+[0m[1m[31mmain:WARN: When raw|udp io mode, bluk size is always 1
+[0mmain: ============ Parameters ============
+main: dev:               /dev/hpio/enp3s0
+main: pp_mode            rx
+main: io_mode            udp
+main: ts_mode            none
+main: per_cpu_rx         off
+main: dst IP:            0.0.0.0
+main: src IP:            0.0.0.0
+main: dst MAC:           00:00:00:00:00:00
+main: src MAC:           00:00:00:00:00:00
+main: packet size:       60
+main: number of bulk:    1
+main: number of threads: 1
+main: CPU mask:          0x3fff0003fff
+main: count of writev(): 0
+main: transmit interval: 0
+main: timeout:           30
+main: ====================================
+main: Create thread 0 on cpu 0
+ppktgen_count_thread: ppktgen_count_thread on CPU 55
+SUM: 681180 pps
+SUM: 682095 pps
+SUM: 681589 pps
+SUM: 682083 pps
+SUM: 682153 pps
+SUM: 681922 pps
+SUM: 682148 pps
+SUM: 681750 pps
+SUM: 681274 pps
+SUM: 650369 pps
+SUM: 583989 pps
+SUM: 584717 pps
+SUM: 584747 pps
+SUM: 584770 pps
+SUM: 584514 pps
+SUM: 584174 pps
+SUM: 584077 pps
+SUM: 584401 pps
+SUM: 584235 pps
+SUM: 614990 pps
+SUM: 680732 pps
+SUM: 680647 pps
+SUM: 680437 pps
+SUM: 680964 pps
+SUM: 680239 pps
+SUM: 681303 pps
+SUM: 681118 pps
+SUM: 681483 pps
+SUM: 681437 pps
+SUM: 681535 pps
