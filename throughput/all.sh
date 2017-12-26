@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir -p dat
+
 echo Generate tx throughput VS bulk num dat, pkt size 60
 
 for cpunum in 1 4 8 16; do
