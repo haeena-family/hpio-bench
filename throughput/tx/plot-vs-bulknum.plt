@@ -1,5 +1,5 @@
 set terminal pdf color fontscale 1
-set output "graph/graph-vs-bulknum.pdf"
+set output "graph/graph-tx-vs-bulknum.pdf"
 
 
 set grid ytic

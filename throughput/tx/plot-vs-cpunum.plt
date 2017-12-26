@@ -1,5 +1,5 @@
 set terminal pdf color fontscale 0.95
-set output "graph/graph-vs-cpunum.pdf"
+set output "graph/graph-tx-vs-cpunum.pdf"
 
 
 set grid ytic

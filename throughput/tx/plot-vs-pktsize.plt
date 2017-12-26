@@ -1,5 +1,5 @@
 set terminal pdf color fontscale 0.95
-set output "graph/graph-vs-pktsize.pdf"
+set output "graph/graph-tx-vs-pktsize.pdf"
 
 
 set grid ytic
