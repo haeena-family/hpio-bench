@@ -52,3 +52,7 @@ for pktsize in 60 128 256 512 1024 1500; do
 	./parser.py $pktsize $txt >> $dat
 done
 done
+
+echo Generate graphs
+gnuplot plot-vs-bulk.plt
+gnuplot plot-vs-pktsize.plt

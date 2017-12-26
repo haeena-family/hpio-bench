@@ -108,3 +108,10 @@ for cpunum in 1 4 8 16; do
 	done
 
 done
+
+
+
+echo Generate graphs
+gnuplot plot-vs-bulknum.plt
+gnuplot plot-vs-cpunum.plt
+gnuplot plot-vs-pktsize.plt

@@ -1,2 +1,3 @@
 .*.swp
-*/dat/*
+*.dat
+.DS_Store
