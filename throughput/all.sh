@@ -22,7 +22,7 @@ done
 
 echo Generate tx throughput VS cpu num dat, pkt size 60
 
-for bulknum in 1 16 32 64; do
+for bulknum in 1 4 32 128; do
 
 	dat=dat/hpio_pktsize-60_bulknum-${bulknum}_vs_cpunum.dat
 	rm -f $dat
@@ -59,4 +59,7 @@ for cpunum in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16; do
 	echo $txt
 	./parser.py $cpunum $txt >> $dat
 done
+
+
+
 
