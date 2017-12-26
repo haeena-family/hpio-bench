@@ -22,7 +22,7 @@ plot	"dat/hpio_pktsize-60_bulknum-1_vs_cpunum.dat"	\
 	"dat/hpio_pktsize-60_bulknum-128_vs_cpunum.dat"	\
 	using ($0):2:xtic(1) with lp title "hpio(128b)",	\
 	"dat/raw_pktsize-60_bulknum-1_vs_cpunum.dat"	\
-	using ($0):2:xtic(1) with lp title "raw socket",	\
+	using ($0):2:xtic(1) with lp title "raw(1b)",	\
 	"dat/udp_pktsize-60_bulknum-1_vs_cpunum.dat"	\
-	using ($0):2:xtic(1) with lp title "udp socket"	
+	using ($0):2:xtic(1) with lp title "udp(1b)"	
 
