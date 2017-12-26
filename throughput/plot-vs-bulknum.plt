@@ -1,0 +1,24 @@
+set terminal pdf color fontscale 1
+set output "graph/graph-vs-bulknum.pdf"
+
+
+set grid ytic
+set ylabel "throughput (Mpps)"
+set size ratio 0.6
+
+set xlabel "# of bulked packets"
+
+set xrange [0:]
+set yrange [0:]
+
+set key top left
+
+plot	"dat/hpio_pktsize-60_cpunum-1_vs_bulk.dat"	\
+	using ($0):2:xtic(1) with lp title "hpio(1)",		\
+	"dat/hpio_pktsize-60_cpunum-4_vs_bulk.dat"	\
+	using ($0):2 with lp title "hpio(4)",		\
+	"dat/hpio_pktsize-60_cpunum-8_vs_bulk.dat"	\
+	using ($0):2 with lp title "hpio(8)",		\
+	"dat/hpio_pktsize-60_cpunum-16_vs_bulk.dat"	\
+	using ($0):2 with lp title "hpio(16)"		\
+
