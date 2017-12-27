@@ -11,13 +11,13 @@ def parse(filename) :
 
     for line in f :
 
-        if cnt >= 3000 :
+        if cnt >= 23000 :
             return
 
         if "TIMESTAMP" in line :
 
             cnt += 1
-            if cnt < 2900 :
+            if cnt <= 3000 :
                 continue
 
             tstamp = int(line.strip().split(":")[1])
