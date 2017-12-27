@@ -29,8 +29,19 @@ mkdir -p dat
 ./parser-diff.py output/x550-raw-sw.txt > dat/diff-x550-raw-sw.dat
 ./parser-diff.py output/x550-udp-sw.txt > dat/diff-x550-udp-sw.dat
 
+# ./diff-cdf.py dat/diff-x550-hpio-hw.dat > cdf/diffcdf-x550-hpio-hw.dat
+# ./diff-cdf.py dat/diff-x550-raw-sw.dat > cdf/diffcdf-x550-raw-sw.dat
+# ./diff-cdf.py dat/diff-x550-udp-sw.dat > cdf/diffcdf-x550-udp-sw.dat
+
+./diff-pdf.py dat/diff-x550-hpio-hw.dat > pdf/diffpdf-x550-hpio-hw.dat
+./diff-pdf.py dat/diff-x550-raw-sw.dat > pdf/diffpdf-x550-raw-sw.dat
+./diff-pdf.py dat/diff-x550-udp-sw.dat > pdf/diffpdf-x550-udp-sw.dat
+
 gnuplot plot-tstamp.plt
 gnuplot plot-tstamp-cnx4.plt
 gnuplot plot-tstamp-cnx4-pktsize-1024.plt
 gnuplot plot-tstamp-diff.plt
 gnuplot plot-tstamp-diff-cnx4.plt
+gnuplot plot-tstamp-diffcdf.plt
+gnuplot plot-tstamp-diffpdf.plt
+
