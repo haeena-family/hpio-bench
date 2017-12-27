@@ -1,0 +1,6 @@
+
+x550.sh [io mode] [ts mode]
+
+./x550.sh hpio hw
+./x550.sh raw sw
+./x550.sh udp sw
