@@ -11,7 +11,7 @@ set xlabel "# of CPU cores"
 set xrange [0:]
 set yrange [0:]
 
-set key at 15,40
+set key at 15,41
 
 plot	"dat/hpio_pktsize-60_bulknum-1_vs_cpunum.dat"	\
 	using ($0):2:xtic(1) with lp title "hpio(1b)",	\
