@@ -17,10 +17,14 @@ def parse(filename) :
         if "TIMESTAMP" in line :
 
             cnt += 1
-            if cnt <= 3000 :
+            if cnt <= 5000 :
                 continue
 
             tstamp = int(line.strip().split(":")[1])
+
+            if tstamp == 0 :
+                print(0)
+                continue
 
             if "SW" in line :
                 tstamp *= 1000
