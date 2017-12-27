@@ -1,0 +1,106 @@
+[1m[31mmain:WARN: When RX mode with hpio, ppktgen uses all CPUs
+[0mmain: ============ Parameters ============
+main: dev:               /dev/hpio/enp129s0f0
+main: pp_mode            rx
+main: io_mode            hpio
+main: ts_mode            none
+main: per_cpu_rx         on
+main: dst IP:            0.0.0.0
+main: src IP:            0.0.0.0
+main: dst MAC:           00:00:00:00:00:00
+main: src MAC:           00:00:00:00:00:00
+main: packet size:       60
+main: number of bulk:    32
+main: number of threads: 56
+main: CPU mask:          0x0
+main: count of writev(): 0
+main: transmit interval: 0
+main: timeout:           30
+main: ====================================
+main: Create thread 0 on cpu 0
+main: Create thread 1 on cpu 1
+main: Create thread 2 on cpu 2
+main: Create thread 3 on cpu 3
+main: Create thread 4 on cpu 4
+main: Create thread 5 on cpu 5
+main: Create thread 6 on cpu 6
+main: Create thread 7 on cpu 7
+main: Create thread 8 on cpu 8
+main: Create thread 9 on cpu 9
+main: Create thread 10 on cpu 10
+main: Create thread 11 on cpu 11
+main: Create thread 12 on cpu 12
+main: Create thread 13 on cpu 13
+main: Create thread 14 on cpu 14
+main: Create thread 15 on cpu 15
+main: Create thread 16 on cpu 16
+main: Create thread 17 on cpu 17
+main: Create thread 18 on cpu 18
+main: Create thread 19 on cpu 19
+main: Create thread 20 on cpu 20
+main: Create thread 21 on cpu 21
+main: Create thread 22 on cpu 22
+main: Create thread 23 on cpu 23
+main: Create thread 24 on cpu 24
+main: Create thread 25 on cpu 25
+main: Create thread 26 on cpu 26
+main: Create thread 27 on cpu 27
+main: Create thread 28 on cpu 28
+main: Create thread 29 on cpu 29
+main: Create thread 30 on cpu 30
+main: Create thread 31 on cpu 31
+main: Create thread 32 on cpu 32
+main: Create thread 33 on cpu 33
+main: Create thread 34 on cpu 34
+main: Create thread 35 on cpu 35
+main: Create thread 36 on cpu 36
+main: Create thread 37 on cpu 37
+main: Create thread 38 on cpu 38
+main: Create thread 39 on cpu 39
+main: Create thread 40 on cpu 40
+main: Create thread 41 on cpu 41
+main: Create thread 42 on cpu 42
+main: Create thread 43 on cpu 43
+main: Create thread 44 on cpu 44
+main: Create thread 45 on cpu 45
+main: Create thread 46 on cpu 46
+main: Create thread 47 on cpu 47
+main: Create thread 48 on cpu 48
+main: Create thread 49 on cpu 49
+main: Create thread 50 on cpu 50
+main: Create thread 51 on cpu 51
+main: Create thread 52 on cpu 52
+main: Create thread 53 on cpu 53
+main: Create thread 54 on cpu 54
+main: Create thread 55 on cpu 55
+ppktgen_count_thread: ppktgen_count_thread on CPU 55
+SUM: 14881959 pps
+SUM: 14880629 pps
+SUM: 14879108 pps
+SUM: 14882048 pps
+SUM: 14881220 pps
+SUM: 14876284 pps
+SUM: 14881246 pps
+SUM: 14875364 pps
+SUM: 14880527 pps
+SUM: 14878967 pps
+SUM: 14881624 pps
+SUM: 14882042 pps
+SUM: 14881684 pps
+SUM: 14878060 pps
+SUM: 14880993 pps
+SUM: 14881665 pps
+SUM: 14882054 pps
+SUM: 14878833 pps
+SUM: 14881638 pps
+SUM: 14881321 pps
+SUM: 14881975 pps
+SUM: 14881351 pps
+SUM: 14878176 pps
+SUM: 14881912 pps
+SUM: 14880059 pps
+SUM: 14882332 pps
+SUM: 14880909 pps
+SUM: 14881364 pps
+SUM: 14881587 pps
+SUM: 14878627 pps
