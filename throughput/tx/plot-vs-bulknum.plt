@@ -11,7 +11,7 @@ set xlabel "# of bulked packets"
 set xrange [0:]
 set yrange [0:]
 
-set key top left
+set key at 2.3,49.5
 
 plot	"dat/hpio_pktsize-60_cpunum-1_vs_bulk.dat"	\
 	using ($0):2:xtic(1) with lp title "hpio(1c)",		\

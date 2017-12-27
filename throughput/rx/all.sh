@@ -13,6 +13,16 @@ for bulknum in 1 4 8 16 32 128; do
 	./parser.py $bulknum $txt >> $dat
 done
 
+dat=dat/hpio_pktsize-60_xdp-on_vs_bulk.dat
+rm -f $dat
+touch $dat
+for bulknum in 1 4 8 16 32 128; do
+	pref=output-hpio/result_rx_cnx5_hpio
+	txt=${pref}_pktsize-60_bulknum-${bulknum}_xdp-on_percpu-on.txt
+	./parser.py $bulknum $txt >> $dat
+done
+
+
 
 
 
@@ -55,4 +65,5 @@ done
 
 echo Generate graphs
 gnuplot plot-vs-bulk.plt
+gnuplot plot-vs-bulk-w-xdp.plt
 gnuplot plot-vs-pktsize.plt
