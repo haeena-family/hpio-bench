@@ -27,7 +27,7 @@ function run_ppktgen {
 	dev=$1
 	io_mode=$2
 	bulknum=$3
-	timeout=$3
+	timeout=$4
 	ppktgen_options=$5
 
 	ppktgen="/home/upa/work/hpio/tools/ppktgen"
