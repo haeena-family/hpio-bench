@@ -17,6 +17,7 @@ interval=0
 moongen_timeout=10
 ppktgen_timeout=1
 bulknum=32
+pktsize=1024
 dev=enp129s0f0
 
 io_mode=$1
@@ -24,7 +25,7 @@ ts_mode=$2
 
 
 run_moongen $dpdk_port $dst_mac $src_mac $dst_ip $src_ip \
-	$interval $moongen_timeout
+	$interval $moongen_timeout $pktsize
 sleep 10
 
 run_ppktgen $dev $io_mode $bulknum $ppktgen_timeout	\

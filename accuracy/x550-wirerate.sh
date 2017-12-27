@@ -17,6 +17,7 @@ interval=0
 moongen_timeout=10
 ppktgen_timeout=1
 bulknum=32
+pktsize=60
 dev=enp130s0f0
 
 io_mode=$1

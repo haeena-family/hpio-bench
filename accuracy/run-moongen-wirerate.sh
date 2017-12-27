@@ -11,11 +11,12 @@ function run_moongen {
 	src_ip=$5
 	interval=$6
 	timeout=$7
+	pktsize=$8
 
 	moongen="~/work/MoonGen/build/MoonGen"                             
 	moongen_tx_interval="~/work/MoonGen/examples/tx-udp.lua" 
 	options="$dpdk_port -d $dst_mac -s $src_mac -D $dst_ip -S $src_ip"
-	options="$options -t $timeout -i $interval"
+	options="$options -t $timeout -i $interval --size $pktsize"
 
 	echo $moongen $moongen_tx_interval $options  >&2
 	$sshcmd sudo $moongen $moongen_tx_interval $options >&2 &
