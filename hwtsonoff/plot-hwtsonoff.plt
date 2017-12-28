@@ -5,7 +5,7 @@ set grid ytic
 set ylabel "throughput (Mpps)"
 set size ratio 0.6
 
-set xlabel "# of bulked packets"
+set xlabel "# of batched packets"
 
 set xrange [0:]
 set yrange [0:]
