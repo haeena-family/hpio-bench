@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mkdir -p dat
+mkdir -p pdf
 
 ./parser.py output/x550-hpio-hw-wirerate.txt > dat/x550-hpio-hw.dat
 ./parser.py output/x550-raw-sw-wirerate.txt > dat/x550-raw-sw.dat
