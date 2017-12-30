@@ -13,4 +13,4 @@ set yrange [0:]
 set key top left
 
 plot	"dat/hpio_pktsize-60_vs_bulk.dat"	\
-	using ($0):2:xtic(1) with lp notitle 	\
+	using ($0):2:xtic(1) with lp title "hpio" 	\
