@@ -27,4 +27,4 @@ plot	"dat/hpio_bulknum-1_percpu-off_vs_pktsize.dat"	\
 	"dat/udp_bulknum-1_percpu-off_vs_pktsize.dat"	\
 	using ($0):2:xtic(1) with lp title "udp(1b)",	\
 	"dat/udp_bulknum-1_percpu-on_vs_pktsize.dat"	\
-	using ($0):2:xtic(1) with lp title "udp(1b) all cpu"	\
+	using ($0):2:xtic(1) with lp title "udp(1b)-all-cpu"	\

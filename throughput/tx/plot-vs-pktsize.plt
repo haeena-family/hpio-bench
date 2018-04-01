@@ -21,8 +21,8 @@ plot	"dat/hpio_bulknum-1_cpunum-1_vs_pktsize.dat"	\
 	using ($0):2:xtic(1) with lp title "hpio(32b,4c)",	\
 	"dat/hpio_bulknum-32_cpunum-8_vs_pktsize.dat"	\
 	using ($0):2:xtic(1) with lp title "hpio(32b,8c)",	\
-	"dat/raw_bulknum-1_cpunum-1_vs_pktsize.dat"	\
+	"dat/raw_bulknum-1_cpunum-16_vs_pktsize.dat"	\
 	using ($0):2:xtic(1) with lp title "raw(1b,16c)",	\
-	"dat/udp_bulknum-1_cpunum-1_vs_pktsize.dat"	\
+	"dat/udp_bulknum-1_cpunum-8_vs_pktsize.dat"	\
 	using ($0):2:xtic(1) with lp title "udp(1b,8c)"	\
 
